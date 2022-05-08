@@ -71,6 +71,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-CSS" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/08/CSS/" class="article-date">
+  <time class="dt-published" datetime="2022-05-08T09:36:10.000Z" itemprop="datePublished">2022-05-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/08/CSS/">CSS笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>CSS：层叠样式表，网页实际上是一个多层的结构，通过CSS可以分别为网页的每一个层来设置样式</p>
+<h3 id="使用CSS修改元素样式"><a href="#使用CSS修改元素样式" class="headerlink" title="使用CSS修改元素样式"></a>使用CSS修改元素样式</h3><ol>
+<li><p>在标签内部通过style属性设置元素样式(内联方式,行内方式)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span>=<span class="string">&quot;color:red; font-size: 30px;&quot;</span>&gt;</span>少小离家老大回，乡音无改鬓毛催<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>缺点：只能对一个标签生效，并且当样式发生变化时，修改不方便</p>
+<p>注意：开发时绝对不要使用内联样式</p>
+</li>
+<li><p>将样式编写到head中的style标签里(内部样式表)，然后通过CSS选择器来选中元素并为其设置各种样式，可同时为多个标签设置样式，并且修改时只用修改一处.但是不能跨页面使用。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: green;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">font-size</span>: <span class="number">50px</span>;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以将CSS样式编写到一个外部的CSS文件中，然后通过link标签来引入外部的CSS文件（外部样式表）可以对多个网页进行使用</p>
+<p><img src="D:\高级桌面\source\img" alt="1"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./style.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/08/CSS/" data-id="cl2x5mcib00007wuo5qfj893h" data-title="CSS笔记" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-HTML笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/05/08/HTML%E7%AC%94%E8%AE%B0/" class="article-date">
@@ -226,7 +281,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/" rel="tag">HTML</a></li></ul>
     </div>
   </div>
 
@@ -236,7 +291,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/HTML/" style="font-size: 10px;">HTML</a>
+      <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a>
     </div>
   </div>
 
@@ -256,6 +311,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/05/08/CSS/">CSS笔记</a>
+          </li>
         
           <li>
             <a href="/2022/05/08/HTML%E7%AC%94%E8%AE%B0/">HTML笔记</a>
